@@ -51,7 +51,6 @@ router.post("/login",async(req,res)=>{
       }
      
     })
-    console.log(user);
 })  
 
 export default router;

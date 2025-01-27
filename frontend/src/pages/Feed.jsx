@@ -31,7 +31,7 @@ export default function Feed({setAddedPost}) {
   async function SendData(e) {
     e.preventDefault()
     let PostData = {
-      userId: userData.userId,
+      userId: userData.userId||userData.newUser._id,
       title: e.target.title.value,
       poster: e.target.poster.value,
       content: e.target.content.value
